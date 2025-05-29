@@ -8,7 +8,7 @@ const ProductDetails = () => {
 
   return (
     <div className='main'>
-
+      ProductDetails
     </div>
   )
 }
