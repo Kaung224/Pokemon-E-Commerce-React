@@ -10,8 +10,6 @@ const ProductGrid = () => {
 
   const url = "https://api.pokemontcg.io/v2/cards?q=";
 
-  console.log("searchQuery", searchQuery);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -20,6 +18,7 @@ const ProductGrid = () => {
         });
         const data = await response.json();
         setProducts(data.data || []);
+        console.log("Fetched products:", data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }

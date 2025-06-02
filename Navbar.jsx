@@ -10,7 +10,6 @@ function Navbar({ setSearchQuery }) {
   const handleSearch = () => {
     const inputValue = inputRef.current.value.trim().toLowerCase();
     if (inputValue) {
-      console.log("Setting search query to:", `name:${inputValue}`);
       setSearchQuery(`name:${inputValue}`);
       inputRef.current.value = "";
     }

@@ -50,7 +50,6 @@
   flex: 1;
   max-width: 850px;
   margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   min-width: 120px;
 }
@@ -91,7 +90,7 @@
 }
 
 .navbar-right-section {
-  width: 300px;
+  width: 350px;
   flex-shrink: 0;
   display: flex;
   justify-content: end;
