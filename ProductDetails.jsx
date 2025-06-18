@@ -39,33 +39,101 @@ const ProductDetails = () => {
             <div className={styles["product-price-container"]}>
               <div className={styles["price-container"]}>
                 <div className={styles["website-name"]}>⚡ Direct By Yamz</div>
-                <div className={styles.conditions}>Near Mint</div>
-                <div className={styles.price}>${marketPrice}</div>
-                <div className='via'>⚡ Available via Yamz Direct</div>
-                <div className={styles.sold}>Sold by Winchester Cards AK</div>
-                <div className={styles['listing']}>
-                  <div className={styles.quantity}>
-                    <select id="choices" defaultValue={1} className={styles['quantity-select']}>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                    <div className={styles['quantity-label']}>
-                      of 3
+                <div className={styles["price-bottom-container"]}>
+                  <div className={styles.condition}>Near Mint Reverse Holofoil</div>
+                  <div className={styles.price}>${marketPrice}</div>
+                  <div className={styles.via}>⚡ Available via Yamz Direct</div>
+                  <div className={styles.sold}>Sold by Winchester Cards AK</div>
+                  <div className={styles['buttons']}>
+                    <div className={styles.quantity}>
+                      <select id="choices" defaultValue={1} className={styles['quantity-select']}>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                      <div className={styles['quantity-label']}>
+                        of 3
+                      </div>
                     </div>
+                    <button className={styles['add-to-button']}>Add to Cart</button>
                   </div>
-                  <div className={styles['add-to-button']}>Add to Cart</div>
-                </div>
-                <div className={styles['pay-option']}>
-                  <p>PayPal Pay in 4 interest-free payments on purchases of $#0-$1,00.</p>
-                  <a href='#'>Learn More</a>
+                  <div className={styles['pay-option']}>
+                    <p>PayPal Pay in 4 interest-free payments on purchases of $0-$1,00.</p>
+                    <a href='#'>Learn More</a>
+                  </div>
                 </div>
               </div>
               <div className={styles['listing']}>
-                <div>View {Math.round(Math.random() * 100) + 1} Other Listings </div>
+                <div><a href="">View {Math.round(Math.random() * 100) + 1} Other Listings </a></div>
                 <div>As Low As ${marketPrice}</div>
               </div>
+              <div className={styles['product-actions']}>
+                <div>Sell this 🏷️</div>
+                <div>Report a problem ⚠️</div>
+              </div>
             </div>
+          </div>
+        </div>
+        <div></div>
+        <div className={styles["stats-container"]}>
+          <div className={styles['market-price-history']}>
+            <h2>Market Price History</h2>
+            <div className={styles['market-price-chart']}>
+
+            </div>
+          </div>
+          <div className={styles['comparison-prices']}>
+            <h2>Near Mint Comparison Prices</h2>
+            <p>Market prices for alternative printings and conditions</p>
+            <div className={styles['comparison-table']}>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Holofoil:</td>
+                    <td>$0.12</td>
+                    <td>Reverse Holofoil:</td>
+                    <td>$0.25</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className={styles['price-points']}>
+              <div className={styles['price-point-header']}>
+                <h3>Price Points ⚠️</h3>
+                <p>Near Mint Holofoil</p>
+              </div>
+              <div className={styles['price-point-details']}>
+                <div className={styles['price-point-market']}>
+                  <span className={styles['price-point-label']}>Market Price:</span>
+                  <span className={styles['price-point-value']}>${marketPrice}</span>
+                </div>
+                <div className={styles['price-point-recent']}>
+                  <span className={styles['price-point-label']}>Most Recent Sale</span>
+                  <span className={styles['price-point-value']}>$0.25</span>
+                </div>
+                <div className={styles['price-point-volatility']}>
+                  <span className={styles['price-point-label']}>Price Volatility:</span>
+                  <span className={styles['price-point-value']}><input type="range" min="0" max="100" value="50" /></span>
+                </div>
+                <div className={styles['price-point-listed']}>
+                  <span className={styles['price-point-label']}>Listed Median:</span>
+                  <span className={styles['price-point-value']}>$0.04</span>
+                </div>
+                <div className={styles['quantity-comparison-table']}>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>Current Quantity:</td>
+                        <td>87</td>
+                        <td>Current Sellers:</td>
+                        <td>18</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
