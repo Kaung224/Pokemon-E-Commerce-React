@@ -1,0 +1,14 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+.header-link {
+  @apply inline-block p-1 rounded-sm cursor-pointer text-[16px] border border-solid border-transparent
+}
+
+.header-link:hover {
+  @apply border-white text-white
+}
+
+.order-link {
+  @apply text-white m-[0_10px]
+}
